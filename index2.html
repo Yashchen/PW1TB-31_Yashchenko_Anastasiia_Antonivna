@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор палива</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="fuelForm">
+    <table>
+      <tr><th>Компонент</th><th>Значення, %</th></tr>
+      <tr><td>Водень (H<sub>P</sub>)</td><td><input type="number" name="H" required></td></tr>
+      <tr><td>Вуглець (C<sub>P</sub>)</td><td><input type="number" name="C" required></td></tr>
+      <tr><td>Сірка (S<sub>P</sub>)</td><td><input type="number" name="S" required></td></tr>
+      <tr><td>Азот (N<sub>P</sub>)</td><td><input type="number" name="N" required></td></tr>
+      <tr><td>Кисень (O<sub>P</sub>)</td><td><input type="number" name="O" required></td></tr>
+      <tr><td>Вологість (W<sub>P</sub>)</td><td><input type="number" name="W" required></td></tr>
+      <tr><td>Зола (A<sub>P</sub>)</td><td><input type="number" name="A" required></td></tr>
+    </table>
+    <button type="button" onclick="calculate()">Розрахувати</button>
+  </form>
+
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
