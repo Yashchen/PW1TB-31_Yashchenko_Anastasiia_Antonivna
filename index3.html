@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор мазуту (Завдання 2)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Завдання 2: Перерахунок горючої маси мазуту на робочу</h2>
+  <form id="fuelFormMazut">
+    <table>
+      <tr><th>Параметр</th><th>Значення</th></tr>
+      <tr><td>Вуглець (C<sub>daf</sub>), %</td><td><input type="number" name="C" step="0.1" required></td></tr>
+      <tr><td>Водень (H<sub>daf</sub>), %</td><td><input type="number" name="H" step="0.1" required></td></tr>
+      <tr><td>Кисень (O<sub>daf</sub>), %</td><td><input type="number" name="O" step="0.1" required></td></tr>
+      <tr><td>Сірка (S<sub>daf</sub>), %</td><td><input type="number" name="S" step="0.1" required></td></tr>
+      <tr><td>Q<sub>daf</sub> (теплота згоряння), МДж/кг</td><td><input type="number" name="Q" step="0.1" required></td></tr>
+      <tr><td>Вологість (W<sub>r</sub>), %</td><td><input type="number" name="W" step="0.1" required></td></tr>
+      <tr><td>Зольність (A<sub>d</sub>), %</td><td><input type="number" name="Ad" step="0.01" required></td></tr>
+      <tr><td>Ванадій (V<sub>daf</sub>), мг/кг</td><td><input type="number" name="V" step="0.1" required></td></tr>
+    </table>
+    <button type="button" onclick="calculateMazut()">Розрахувати</button>
+  </form>
+
+  <div id="results"></div>
+  
+  <script src="script2.js"></script>
+</body>
+</html>
+
